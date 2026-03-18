@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+  --color-rpm-maroon: #540214;
+  --color-rpm-maroon-dark: #450f1a;
+  --color-rpm-pink: #FFC0CB;
+  --color-rpm-light-pink: #FFB6C1;
+  --color-rpm-baby-pink: #F4C2C2;
+  --color-rpm-black: #222222;
+  --color-rpm-silver: #7F7F7F;
+  --color-rpm-silver-light: #ebedef;
+  --color-rpm-grey-light: #8c9291;
+  --color-product-bkgd-grey: #333333;
+  --color-product-bkgd-black: #222222;
+  --animate-gradient-xy: gradient-xy 3s ease infinite;
+
+  @keyframes gradient-xy {
+    0%, 100% {
+      background-size: 400% 400%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+}
