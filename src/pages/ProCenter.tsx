@@ -335,7 +335,7 @@ export default function ProCenter() {
                 className="w-full lg:w-1/2"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  Unmatched <span className="text-[#333333]">Reliability</span>
+                  Unmatched <span className="text-black font-bold">Reliability</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   Built for the long haul. The center chain plastic sits in a precision machined groove—once aligned, it never needs adjustment.
@@ -369,13 +369,13 @@ export default function ProCenter() {
       </div>
 
       {/* Interactive Technical Specifications */}
-      <section id="specs" className="py-24 px-6 md:px-16 bg-black relative z-20">
+      <section id="specs" className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative z-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4 uppercase tracking-widest">
               Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#540214] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-12">

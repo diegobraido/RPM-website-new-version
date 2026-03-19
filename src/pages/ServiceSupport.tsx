@@ -242,7 +242,7 @@ export default function ServiceSupport() {
             </div>
             
             <div className="flex items-center gap-4 md:gap-6 mb-6">
-              <img src="https://www.rpmachinery.com/images/rpm-logo-edits-centered-textbox_embedMask_Transparent_300dpi.png" alt="RPM Logo" className="h-16 md:h-24 w-auto object-contain" />
+              <img src="/Logo-footer.png" alt="RPM Logo" className="h-16 md:h-24 w-auto object-contain" />
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white uppercase tracking-widest drop-shadow-2xl">
                 Protect Your <span className="text-rpm-maroon">Investment</span>
               </h1>

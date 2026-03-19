@@ -144,7 +144,7 @@ export default function HPU() {
       </section>
 
       {/* Technical Specifications - Modern Grid Layout */}
-      <section className="py-24 px-6 md:px-16 bg-black relative z-20 overflow-hidden">
+      <section className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative z-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-[#222222] to-black opacity-80"></div>
           <motion.div 

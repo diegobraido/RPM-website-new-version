@@ -363,7 +363,7 @@ export default function ProCanter() {
                 className="w-full lg:w-2/5"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  Side Board <span className="text-[#7F7F7F]">Dispatch</span>
+                  Side Board <span className="text-black font-bold">Dispatch</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   Seamlessly handle side boards with high-speed dispatch capabilities. Designed to keep your mill flowing without bottlenecks.
@@ -397,13 +397,13 @@ export default function ProCanter() {
       </div>
 
       {/* Interactive Technical Specifications */}
-      <section id="specs" className="py-32 px-6 md:px-16 bg-black border-t border-black/5 relative overflow-hidden">
+      <section id="specs" className="py-32 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] border-t border-black/5 relative overflow-hidden">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase tracking-widest mb-6">
               Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#540214] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">

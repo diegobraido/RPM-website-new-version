@@ -144,15 +144,15 @@ export default function ScanBelt() {
       </section>
 
       {/* Technical Specifications Section */}
-      <section id="specs" className="py-24 px-6 md:px-16 bg-black relative overflow-hidden">
+      <section id="specs" className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#450f1a] rounded-full blur-[200px] opacity-10 pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white uppercase tracking-widest mb-6">
-              Technical <span className="text-[#450f1a]">Specifications</span>
+              Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#450f1a] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

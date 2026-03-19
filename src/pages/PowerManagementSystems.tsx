@@ -210,7 +210,7 @@ export default function PowerManagementSystems() {
       </section>
 
       {/* Interactive Technical Specifications */}
-      <section id="specs" className="py-32 px-6 md:px-16 bg-black border-t border-white/5 relative overflow-hidden">
+      <section id="specs" className="py-32 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] border-t border-white/5 relative overflow-hidden">
         {/* Decorative background */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#540214] rounded-full blur-[200px] opacity-10 pointer-events-none"></div>
         
@@ -219,7 +219,7 @@ export default function PowerManagementSystems() {
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase tracking-widest mb-6">
               Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#540214] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">

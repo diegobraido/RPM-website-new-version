@@ -365,7 +365,7 @@ export default function ProDog() {
                 className="w-full lg:w-2/5"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  5-Way <span className="text-[#333333]">Outfeed Dispatch</span>
+                  5-Way <span className="text-black font-bold">Outfeed Dispatch</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   A 5-way outfeed uses inertia separators below the feedline to divert boards to five different downstream locations like the backline, re-saw, or board edger.
@@ -399,13 +399,13 @@ export default function ProDog() {
       </div>
 
       {/* Interactive Technical Specifications */}
-      <section id="specs" className="py-32 px-6 md:px-16 bg-black border-t border-black/5 relative overflow-hidden">
+      <section id="specs" className="py-32 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] border-t border-black/5 relative overflow-hidden">
         <div className="max-w-[1400px] mx-auto relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase tracking-widest mb-6">
               Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#540214] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8">
@@ -483,7 +483,7 @@ export default function ProDog() {
                     ) : (
                       <img 
                         src={
-                          activeTab === 0 ? "/Products/ProDog/ProDog.png" :
+                          activeTab === 0 ? "/Products/ProDog/ProDog-Charging-System.png" :
                           activeTab === 2 ? "/Products/ProDog/ProDog-Beam-structure.png" :
                           "/Products/ProDog/ProDog-Cutting-tool.png"
                         }

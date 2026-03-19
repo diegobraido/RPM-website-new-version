@@ -144,7 +144,7 @@ export default function ProOiler() {
       </section>
 
       {/* Technical Specifications - Modern Grid Layout */}
-      <section className="py-24 px-6 md:px-16 bg-black relative z-20 overflow-hidden">
+      <section className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative z-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-[#111111] to-black opacity-80"></div>
           <motion.div 
@@ -157,9 +157,9 @@ export default function ProOiler() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4 uppercase tracking-widest">
-              Technical <span className="text-[#450f1a]">Specifications</span>
+              Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#450f1a] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
             <p className="text-[#8C9291] mt-6 max-w-2xl mx-auto font-light text-lg">
               Engineered for precision, security, and seamless integration. Discover the core features that drive the ProOiler system.
             </p>

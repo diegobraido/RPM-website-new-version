@@ -77,10 +77,16 @@ export default function ProSaw() {
           </Link>
         </div>
         {/* Background Video/Image Overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute inset-0 bg-[#222222] z-0"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#222222] via-[#222222]/80 to-transparent z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-transparent to-transparent z-10"></div>
-          {/* Background Overlay */}
+          <img 
+            src="/Products/ProSaw/ProSaw.png" 
+            alt="ProSaw" 
+            className="absolute right-[-5%] top-1/2 -translate-y-1/2 w-[90%] lg:w-[60%] h-auto object-contain opacity-60 z-0 drop-shadow-2xl"
+            referrerPolicy="no-referrer"
+          />
         
           {/* Animated Background Elements */}
           <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
@@ -413,7 +419,7 @@ export default function ProSaw() {
                 className="w-full lg:w-2/5"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  Precision Profiling & <span className="text-[#333333]">Power</span>
+                  Precision <span className="text-black font-bold">Profiling & Power</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   Achieve +/- 6 degrees of skew with independent profiler heads accurately following a 200' curve radius. Powered by a single 800 HP motor per arbor, belted directly with Polychain to eliminate jackshafts.
@@ -522,13 +528,13 @@ export default function ProSaw() {
       </div>
 
       {/* Interactive Technical Specifications */}
-      <section id="specs" className="py-24 px-6 md:px-16 bg-black relative z-20">
+      <section id="specs" className="py-24 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative z-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4 uppercase tracking-widest">
-              Technical <span className="text-[#450f1a]">Specifications</span>
+              Technical <span className="text-[#540214]">Specifications</span>
             </h2>
-            <div className="w-24 h-1 bg-[#450f1a] mx-auto rounded-full"></div>
+            <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
             <p className="text-[#8C9291] mt-6 max-w-2xl mx-auto font-light">
               Explore the underlying engineering and structural details that make the ProSaw the industry leader in curve profiling.
             </p>

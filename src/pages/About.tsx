@@ -5,7 +5,7 @@ import YouTubeLoop from '../components/YouTubeLoop';
 
 const RPMIcon = ({ className, size }: { className?: string, size?: number }) => (
   <img 
-    src="https://www.rpmachinery.com/images/rpm-logo-edits-centered-textbox_embedMask_Transparent_300dpi.png" 
+    src="/Logo-footer.png" 
     alt="RPM Icon" 
     style={{ width: size, height: size }}
     className={`object-contain ${className || ''}`} 
@@ -107,7 +107,7 @@ export default function About() {
                   </h2>
                 </div>
                 <div className="mb-8">
-                  <img src="https://www.rpmachinery.com/images/rpm-logo-edits-centered-textbox_embedMask_Transparent_300dpi.png" alt="RPM Logo" className="h-16 w-auto object-contain" />
+                  <img src="/Logo-footer.png" alt="RPM Logo" className="h-16 w-auto object-contain" />
                 </div>
                 
                 <p className="text-lg text-[#ebedef] font-light leading-relaxed mb-6">

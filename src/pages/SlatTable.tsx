@@ -83,7 +83,7 @@ export default function SlatTable() {
             className="w-full lg:w-1/2 relative z-20"
           >
             <img 
-              src="https://www.rpmachinery.com/images/products/icons/SlatTable_ISO_Transp.png" 
+              src="/Products/Slat-table/Slat-table.png" 
               alt="Slat Table" 
               className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
               referrerPolicy="no-referrer"
@@ -144,12 +144,12 @@ export default function SlatTable() {
       </section>
 
       {/* Technical Specifications Header */}
-      <section className="pt-24 pb-12 px-6 md:px-16 bg-black relative z-20">
+      <section className="pt-24 pb-12 px-6 md:px-16 bg-gradient-to-b from-black to-[#333333] relative z-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4 uppercase tracking-widest">
             Technical <span className="text-[#540214]">Specifications</span>
           </h2>
-          <div className="w-24 h-1 bg-[#540214] mx-auto rounded-full"></div>
+          <div className="w-24 h-2 bg-[#540214] mx-auto rounded-full"></div>
         </div>
       </section>
 
@@ -319,7 +319,7 @@ export default function SlatTable() {
                 className="w-full lg:w-1/2"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  Automatic <span className="text-[#FFC0CB]">Lubrication</span>
+                  Automatic <span className="text-black font-bold">Lubrication</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   All bearings and chains are automatically lubricated with grease and oil, ensuring optimal performance and significantly reducing manual maintenance requirements.
