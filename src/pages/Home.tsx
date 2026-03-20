@@ -50,7 +50,7 @@ const productSolutions = [
     products: [
       { name: "ProCenter", image: "/Products/ProCenter/ProCenter.png" },
       { name: "Dynamic Linebar", image: "/Products/Dynamic-linebar/Dynamic-linebar.png" },
-      { name: "Precision Scanbelt", image: "/Products/Precision-scanbelt/Precision-scanbelt.png" },
+      { name: "Precision Scan Belt", image: "/Products/Precision-scanbelt/Precision-scanbelt.png" },
       { name: "ProSaw", image: "/Products/ProSaw/ProSaw.png" }
     ],
     description: "Maximize recovery and minimize downtime with our advanced, compact secondary breakdown machinery, engineered for high-speed cutting, precise curve sawing, and optimized cant handling",
