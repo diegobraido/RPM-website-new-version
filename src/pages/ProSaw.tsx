@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, ChevronRight, CheckCircle2, Zap, Settings, ArrowRight, Activity, Layers, ShieldCheck, Crosshair, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import YouTubeLoop from '../components/YouTubeLoop';
 
 export default function ProSaw() {
   const [activeTab, setActiveTab] = useState(0);
@@ -66,7 +67,7 @@ export default function ProSaw() {
     <div className="min-h-screen bg-[#333333] text-white font-sans selection:bg-[#540214] selection:text-white">
       
       {/* Immersive Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#222222]">
+      <section className="relative min-h-[80vh] flex flex-col lg:flex-row items-stretch overflow-hidden bg-[#222222]">
         <div className="fixed top-24 left-4 z-50">
           <Link 
             to="/products" 
@@ -76,98 +77,80 @@ export default function ProSaw() {
             Back to Products
           </Link>
         </div>
-        {/* Background Video/Image Overlay */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute inset-0 bg-[#222222] z-0"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#222222] via-[#222222]/80 to-transparent z-10"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-transparent to-transparent z-10"></div>
-          <img 
-            src="/Products/ProSaw/ProSaw.png" 
-            alt="ProSaw" 
-            className="absolute right-[-5%] top-1/2 -translate-y-1/2 w-[90%] lg:w-[60%] h-auto object-contain opacity-60 z-0 drop-shadow-2xl"
-            referrerPolicy="no-referrer"
-          />
-        
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] mix-blend-overlay"></div>
-            <motion.div 
-              animate={{ 
-                scale: [1, 1.1, 1],
-                opacity: [0.4, 0.6, 0.4]
-              }}
-              transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-[30%] -right-[10%] w-[80%] h-[80%] rounded-full bg-[#540214] blur-[180px]"
-            />
-            <motion.div 
-              animate={{ 
-                scale: [1, 1.2, 1],
-                opacity: [0.2, 0.5, 0.2]
-              }}
-              transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-              className="absolute -bottom-[30%] -left-[10%] w-[70%] h-[70%] rounded-full bg-[#540214] blur-[150px]"
-            />
-          </div>
-</div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-20 flex flex-col lg:flex-row items-center gap-12 pt-32 pb-20">
+        {/* Left Column: Content */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center p-8 md:p-16 relative z-20">
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-[#222222] z-0"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#222222] via-[#222222]/80 to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#222222] via-transparent to-transparent z-10"></div>
+            
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+              <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] mix-blend-overlay"></div>
+              <motion.div 
+                animate={{ 
+                  scale: [1, 1.1, 1],
+                  opacity: [0.4, 0.6, 0.4]
+                }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-[30%] -left-[10%] w-[80%] h-[80%] rounded-full bg-[#540214] blur-[180px]"
+              />
+            </div>
+          </div>
+
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="w-full lg:w-1/2"
+            className="max-w-xl w-full relative z-20 pt-20"
           >
-            <div className="inline-flex items-center gap-3 px-4 py-2 bg-[#540214]/20 border border-[#540214]/50 text-[#FFB6C1] text-sm font-bold tracking-[0.2em] uppercase mb-6 rounded-full backdrop-blur-md">
-              <span className="w-2 h-2 rounded-full bg-[#FFC0CB] animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-widest mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#540214] animate-pulse"></span>
               Secondary Breakdown
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white uppercase tracking-widest leading-[0.9] mb-8 drop-shadow-2xl">
+            
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 uppercase tracking-tighter leading-[0.9]">
               Pro<span className="text-[#540214]">Saw</span>
             </h1>
-            <h2 className="text-2xl md:text-4xl font-display text-[#EBEDEF] mb-8 leading-tight">
+            
+            <h2 className="text-2xl md:text-3xl font-display text-[#EBEDEF] mb-4 leading-tight">
               Curve Profiling Gang.
             </h2>
-            <p className="text-xl md:text-2xl text-[#8C9291] font-light mb-12 max-w-2xl leading-relaxed">
+            
+            <p className="text-xl text-[#EBEDEF] font-light mb-8 leading-relaxed">
               The most rigid, advanced, and highest performing curving canter profiling system and curve sawing gang on the market for processing up to 12 inch cants.
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/contact" 
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#540214] text-white text-sm font-bold uppercase tracking-widest rounded-full hover:bg-[#450f1a] transition-all duration-300 shadow-[0_0_30px_rgba(84,2,20,0.4)] hover:shadow-[0_0_40px_rgba(84,2,20,0.6)] hover:-translate-y-1"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#540214] text-white text-sm font-bold uppercase tracking-widest rounded-full hover:bg-[#450f1a] transition-all duration-300 shadow-[0_0_30px_rgba(84,2,20,0.4)] hover:shadow-[0_0_40px_rgba(84,2,20,0.6)] hover:-translate-y-1"
               >
                 Request a Quote
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a 
                 href="#specs" 
-                className="inline-flex items-center gap-3 px-8 py-4 bg-transparent border border-[#7F7F7F] text-[#EBEDEF] text-sm font-bold uppercase tracking-widest rounded-full hover:border-[#EBEDEF] hover:bg-white/5 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent border border-[#7F7F7F] text-[#EBEDEF] text-sm font-bold uppercase tracking-widest rounded-full hover:border-[#EBEDEF] hover:bg-white/5 transition-all duration-300"
               >
                 View Specs
               </a>
             </div>
           </motion.div>
+        </div>
 
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="w-full lg:w-1/2 relative z-20"
-          >
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black group">
-              <iframe 
-                className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/TuMPCC68qPc?autoplay=1&mute=1&loop=1&playlist=TuMPCC68qPc&start=8&controls=1&showinfo=0&rel=0" 
-                title="ProSaw Product Video" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
-              {/* Cinematic Overlay */}
-              <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_150px_80px_rgba(0,0,0,0.8)] z-10"></div>
-              <CopyLinkButton url="https://youtu.be/TuMPCC68qPc" />
-            </div>
-          </motion.div>
+        {/* Right Column: Video Player */}
+        <div className="w-full lg:w-1/2 relative min-h-[50vh] lg:min-h-full bg-black overflow-hidden">
+          <YouTubeLoop 
+            videoId="TuMPCC68qPc" 
+            start={8} 
+            end={120} 
+            className="absolute top-0 left-0 w-full h-full" 
+          />
+          {/* Cinematic Overlay */}
+          <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_80px_40px_rgba(0,0,0,1)] z-10"></div>
+          <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_150px_80px_rgba(0,0,0,0.8)] z-10"></div>
         </div>
       </section>
 
