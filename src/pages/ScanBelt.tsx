@@ -229,35 +229,41 @@ export default function ScanBelt() {
       </section>
 
       {/* Conversion Focus CTA */}
-      <section className="py-24 px-6 md:px-16 bg-[#540214] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[150%] bg-white/5 rotate-12 blur-3xl"></div>
-          <div className="absolute -bottom-[20%] -left-[10%] w-[50%] h-[150%] bg-black/10 -rotate-12 blur-3xl"></div>
+      <section className="py-16 px-6 md:px-16 relative overflow-hidden bg-[#0a0a0a]">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 z-0 opacity-30">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] mix-blend-overlay"></div>
+          <motion.div 
+            animate={{ 
+              scale: [1, 1.1, 1],
+              opacity: [0.4, 0.6, 0.4]
+            }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -top-[30%] -right-[10%] w-[80%] h-[80%] rounded-full bg-[#540214] blur-[180px]"
+          />
+          <motion.div 
+            animate={{ 
+              scale: [1, 1.2, 1],
+              opacity: [0.2, 0.5, 0.2]
+            }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            className="absolute -bottom-[30%] -left-[10%] w-[70%] h-[70%] rounded-full bg-[#540214] blur-[150px]"
+          />
         </div>
-        
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 uppercase tracking-widest drop-shadow-lg">
-            Ready to Upgrade Your <span className="text-[#333333]">Scan Belt?</span>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-white uppercase tracking-widest mb-6 drop-shadow-lg">
+            Ready to Upgrade Your <span className="font-bold text-[#540214]">Scan Belt?</span>
           </h2>
-          <p className="text-xl text-white/80 font-light mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-[#EBEDEF] font-light mb-10 max-w-2xl mx-auto">
             Contact our engineering team today to discuss how the Precision Scan Belt can integrate into your existing line and maximize your recovery.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
-              to="/contact" 
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-[#540214] text-sm font-bold uppercase tracking-widest rounded-full hover:bg-[#EBEDEF] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
-            >
-              Request a Quote
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <a 
-              href="tel:+18005551234" 
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-transparent border-2 border-white/30 text-white text-sm font-bold uppercase tracking-widest rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
-            >
-              Call Sales
-            </a>
-          </div>
+          <Link 
+            to="/contact" 
+            className="inline-flex items-center gap-3 px-10 py-5 bg-[#450f1a] text-white text-lg font-bold uppercase tracking-widest rounded-full hover:bg-[#540214] hover:scale-105 transition-all duration-300 shadow-2xl"
+          >
+            Contact us to learn more
+            <ArrowRight className="w-6 h-6" />
+          </Link>
         </div>
       </section>
 
