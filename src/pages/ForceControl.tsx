@@ -318,7 +318,7 @@ export default function ForceControl() {
                 className="w-full lg:w-2/5"
               >
                 <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 uppercase tracking-wide">
-                  Spiked <span className="text-[#7F7F7F]">Rolls</span>
+                  Spiked <span className="text-black font-bold">Rolls</span>
                 </h3>
                 <p className="text-[#EBEDEF] text-lg mb-8 font-light leading-relaxed">
                   Force-controlled spike rolls offer superior accuracy and control, increasing recovery and reducing maintenance through smooth operation. Applications include Log Turners, Side Spike Rolls, Spiked Pressrolls.

@@ -50,7 +50,7 @@ const productSolutions = [
     products: [
       { name: "ProCenter", image: "/Products/ProCenter/ProCenter.png" },
       { name: "Dynamic Linebar", image: "/Products/Dynamic-linebar/Dynamic-linebar.png" },
-      { name: "Precision Scanbelt", image: "/Products/Precision-scanbelt/Precision-scanbelt.png" },
+      { name: "Precision Scan Belt", image: "/Products/Precision-scanbelt/Precision-scanbelt.png" },
       { name: "ProSaw", image: "/Products/ProSaw/ProSaw.png" }
     ],
     description: "Maximize recovery and minimize downtime with our advanced, compact secondary breakdown machinery, engineered for high-speed cutting, precise curve sawing, and optimized cant handling",
@@ -266,10 +266,9 @@ export default function Home() {
             videoId="DBHsrlQRYF8" 
             start={30} 
             end={140} 
-            className="absolute top-1/2 left-1/2 w-[300vw] h-[300vh] md:w-[150vw] md:h-[150vh] -translate-x-1/2 -translate-y-1/2 opacity-50" 
+            className="absolute top-1/2 left-1/2 w-[300vw] h-[300vh] md:w-[150vw] md:h-[150vh] -translate-x-1/2 -translate-y-1/2 opacity-100" 
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
-          <div className="absolute inset-0 bg-[#1a1a1a]/40 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/30"></div>
         </div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-6 w-full flex items-center h-full">
@@ -282,23 +281,23 @@ export default function Home() {
                 animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, x: -40, filter: "blur(8px)" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="absolute w-full"
+                className="absolute w-full max-w-4xl bg-gradient-to-r from-black/90 to-black/40 p-8 md:p-12 lg:p-16 rounded-3xl backdrop-blur-sm border border-white/5 shadow-2xl"
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white uppercase tracking-widest leading-tight mb-6 font-display drop-shadow-xl w-full">
                   {slides[currentSlide].heading}
                 </h1>
-                <p className="text-2xl md:text-3xl text-[#ebedef] mb-10 font-sans font-light leading-relaxed max-w-3xl border-l-2 border-rpm-maroon pl-6 drop-shadow-md">
+                <p className="text-xl md:text-2xl lg:text-3xl text-[#ebedef] mb-10 font-sans font-light leading-relaxed max-w-3xl drop-shadow-md">
                   {slides[currentSlide].text}
                 </p>
                 
                 <div>
                   {slides[currentSlide].buttonLink.startsWith('http') ? (
-                    <a href={slides[currentSlide].buttonLink} target="_blank" rel="noreferrer" className="inline-flex items-center bg-rpm-maroon text-white py-4 px-10 uppercase tracking-[0.2em] font-bold text-sm hover:bg-white hover:text-rpm-black transition-all shadow-xl border border-rpm-maroon group">
+                    <a href={slides[currentSlide].buttonLink} target="_blank" rel="noreferrer" className="inline-flex items-center bg-rpm-maroon text-white py-4 px-10 uppercase tracking-[0.2em] font-bold text-sm hover:bg-white hover:text-rpm-black transition-all shadow-xl border border-rpm-maroon rounded-sm group">
                       {slides[currentSlide].buttonText}
                       <ArrowRight className="ml-3 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                     </a>
                   ) : (
-                    <Link to={slides[currentSlide].buttonLink} className="inline-flex items-center bg-rpm-maroon text-white py-4 px-10 uppercase tracking-[0.2em] font-bold text-sm hover:bg-white hover:text-rpm-black transition-all shadow-xl border border-rpm-maroon group">
+                    <Link to={slides[currentSlide].buttonLink} className="inline-flex items-center bg-rpm-maroon text-white py-4 px-10 uppercase tracking-[0.2em] font-bold text-sm hover:bg-white hover:text-rpm-black transition-all shadow-xl border border-rpm-maroon rounded-sm group">
                       {slides[currentSlide].buttonText}
                       <ArrowRight className="ml-3 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                     </Link>
